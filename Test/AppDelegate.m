@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LoginVC.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    LoginVC *vcMain = [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vcMain];
-    self.window.rootViewController = nav;
-    nav.navigationBarHidden = YES;
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    self.window.rootViewController = navigationController;
+    navigationController.navigationBarHidden = YES;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

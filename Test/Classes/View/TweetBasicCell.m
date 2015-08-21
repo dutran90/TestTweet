@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Alex Tran. All rights reserved.
 //
 
-#import "CCMain.h"
+#import "TweetBasicCell.h"
 
-@implementation CCMain
+@implementation TweetBasicCell
 
 - (void)awakeFromNib {
     // Initialization code

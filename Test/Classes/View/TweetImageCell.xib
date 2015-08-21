@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TweetCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetImageCell" rowHeight="365" id="KGk-i7-Jjw" userLabel="TweetImageCell" customClass="TweetImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="365"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grace Gimero" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoE-L2-zKj">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8pU-gB-bBM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgS-Wb-iyz" customClass="TweetLabel">
+                        <rect key="frame" x="8" y="37" width="304" height="83"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NFR-4P-aEC">
+                        <rect key="frame" x="8" y="128" width="304" height="220"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="220" id="ulQ-Nj-lrO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BoE-L2-zKj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7TG-iO-pWN"/>
+                    <constraint firstItem="FgS-Wb-iyz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DGa-kA-Aee"/>
+                    <constraint firstItem="NFR-4P-aEC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="EOi-PW-IXE"/>
+                    <constraint firstItem="FgS-Wb-iyz" firstAttribute="top" secondItem="BoE-L2-zKj" secondAttribute="bottom" constant="8" id="Eda-dv-fh9"/>
+                    <constraint firstItem="NFR-4P-aEC" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="-8" id="VJC-aq-gbR"/>
+                    <constraint firstItem="BoE-L2-zKj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="hrj-5o-dRQ"/>
+                    <constraint firstItem="NFR-4P-aEC" firstAttribute="top" secondItem="FgS-Wb-iyz" secondAttribute="bottom" constant="8" id="oew-0t-Qh8"/>
+                    <constraint firstItem="NFR-4P-aEC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="poB-K1-rbs"/>
+                    <constraint firstItem="BoE-L2-zKj" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qfe-lD-M9S"/>
+                    <constraint firstItem="FgS-Wb-iyz" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zgn-zc-T8T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imvTweet" destination="NFR-4P-aEC" id="Ngs-ud-SRH"/>
+                <outlet property="subtitleLabel" destination="FgS-Wb-iyz" id="8xj-aE-OZi"/>
+                <outlet property="titleLabel" destination="BoE-L2-zKj" id="kPp-60-L8j"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="201.5"/>
+        </tableViewCell>
+    </objects>
+</document>

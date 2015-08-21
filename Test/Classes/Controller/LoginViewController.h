@@ -1,5 +1,5 @@
 //
-//  MainVC.h
+//  LoginVC.h
 //  Test
 //
 //  Created by Alex Tran on 8/20/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainVC : UIViewController
+@interface LoginViewController : UIViewController
 
 @end

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
-                <outlet property="tfPassword" destination="QSZ-jG-F4h" id="mY1-P4-I0Y"/>
-                <outlet property="tfUsername" destination="seN-mL-kbg" id="E0O-eU-FpB"/>
+                <outlet property="passwordTextField" destination="QSZ-jG-F4h" id="ahi-KF-xqK"/>
+                <outlet property="usernameTextField" destination="seN-mL-kbg" id="jnM-rM-if7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,7 +30,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seN-mL-kbg">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seN-mL-kbg" userLabel="usernameTextField">
                             <rect key="frame" x="104" y="62" width="208" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="iu5-Oi-dii"/>
@@ -41,7 +41,7 @@
                                 <outlet property="delegate" destination="-1" id="9e8-ew-dL0"/>
                             </connections>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSZ-jG-F4h">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSZ-jG-F4h" userLabel="passwordTextField">
                             <rect key="frame" x="104" y="119" width="208" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="f1X-9i-Ghl"/>
@@ -52,7 +52,7 @@
                                 <outlet property="delegate" destination="-1" id="Ufw-cr-t1b"/>
                             </connections>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkV-27-29m">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkV-27-29m" userLabel="loginButton">
                             <rect key="frame" x="117" y="191" width="86" height="38"/>
                             <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
