@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC">
+            <connections>
+                <outlet property="tbvMain" destination="onj-7f-LMf" id="BGN-E1-RLk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="onj-7f-LMf">
+                    <rect key="frame" x="0.0" y="60" width="320" height="439"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ikK-Nu-i5d"/>
+                        <outlet property="delegate" destination="-1" id="R2J-hL-hOn"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bla-sI-7tb">
+                    <rect key="frame" x="117" y="510" width="86" height="38"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="946-DC-d4u"/>
+                        <constraint firstAttribute="width" constant="86" id="S7z-V0-8IO"/>
+                    </constraints>
+                    <state key="normal" title="LOGOUT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchLogout:" destination="-1" eventType="touchUpInside" id="iGn-xS-UbK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Bla-sI-7tb" secondAttribute="centerX" id="72W-PM-gYt"/>
+                <constraint firstItem="onj-7f-LMf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OES-j8-HoQ"/>
+                <constraint firstAttribute="trailing" secondItem="onj-7f-LMf" secondAttribute="trailing" id="OnE-o3-PQh"/>
+                <constraint firstAttribute="bottom" secondItem="Bla-sI-7tb" secondAttribute="bottom" constant="20" id="RCV-ZK-i5h"/>
+                <constraint firstItem="Bla-sI-7tb" firstAttribute="top" secondItem="onj-7f-LMf" secondAttribute="bottom" constant="11" id="RJi-ji-ArA"/>
+                <constraint firstItem="onj-7f-LMf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="TWv-2A-59C"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
